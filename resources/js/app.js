@@ -1,8 +1,7 @@
 
-var todoList = [];
 let $ul = $('ul');
-//Adding Todo
 
+//Adding Todo
 $("input").on("keypress", function(e) {
 if(e.keyCode === 13) {
 	var todo = $(this).val();
@@ -13,8 +12,7 @@ if(e.keyCode === 13) {
 });
 		
 
-//chaning Li CSS on click
-
+//changing Li CSS on click
 
 $('ul').on("click", "li", function(e) {
 	$(this).toggleClass("completed");
